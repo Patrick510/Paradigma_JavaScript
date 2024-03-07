@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <h1>Calculadora</h1>
+
+  Numero1: <input type="text" id="num1">
+  Numero2: <input type="text" id="num2">
+  <button type="button" id="adicao"> + </button>
+  <button type="button" id="subtracao"> - </button>
+  <button type="button" id="divisao"> / </button>
+  <button type="button" id="multiplicacao"> x </button>
+
+  <script>
+    const soma = document.querySelector("#adicao")
+    const menos = document.querySelector("#subtracao")
+    const divisao = document.querySelector("#divisao")
+    const multiplicacao = document.querySelector("#multiplicacao")
+
+    menos.addEventListener("click", () => {
+      const n1 = parseFloat(document.getElementById("num1").value)
+      const n2 = parseFloat(document.getElementById("num2").value)
+      const total = n1 - n2
+      return alert(`Resultado da subtração é: ${total}`)
+    })
+
+    soma.addEventListener("click", () => {
+      const n1 = parseFloat(document.getElementById("num1").value)
+      const n2 = parseFloat(document.getElementById("num2").value)
+      return alert("Resultado da soma: " + (n1 + n2))
+    })
+
+    divisao.addEventListener("click", () => {
+      const n1 = parseFloat(document.getElementById("num1").value)
+      const n2 = parseFloat(document.getElementById("num2").value)
+      const divisaototal = n1 / n2
+      return alert(`Resultado da divisão: ${divisaototal}`)
+    })
+
+    multiplicacao.addEventListener("click", () => {
+      const n1 = parseFloat(document.getElementById("num1").value)
+      const n2 = parseFloat(document.getElementById("num2").value)
+      const multiplicacaototal = n1 * n2
+      return alert(`Resultado da multiplicação: ${multiplicacaototal}`)
+    })
+
+  </script>
+</body>
+
+</html>
