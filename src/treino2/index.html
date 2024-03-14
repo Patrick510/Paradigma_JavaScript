@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONTE POPPINS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- BOX ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- or -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="bar-top">
+      <div id="logo">
+        <div id="logo-bg"> <i id="bx-logo" class='bx bxl-squarespace'></i> </div>
+        <div id="bx-bg"> <i id="bx-bg-" class='bx bx-equalizer'></i> </div>
+      </div>
+      <div id="search-bar">
+        <i id="search-bx" class='bx bx-search'></i><input type="text" name="" id="search-box" placeholder="Search User, Events and morre...">
+      </div>
+      <div class="user">
+        <div class="user-english">
+          English<i id="user-arrow" class='bx bx-chevron-down'></i>
+        </div>
+        <i id="user-sett" class='bx bx-cog'></i>
+        <i id="user-bell" class='bx bx-bell'></i> <span id="number-alert"> 1 </span>
+        <div class="img-user"></div>
+      </div>
+    </div>
+    <div id="func">
+      <div id="arrow-back">
+        <i id="func-arrow" class='bx bx-chevron-left'></i>
+        <p id="back">Back</p>
+      </div>
+      <div id="func-list">
+        <p id="home">Home / Apps <b>/ File Manager </b> </p>
+      </div>
+
+      <div class="func-btn">
+        <button id="btn-import" type="button"> <i class='bx bx-link-external bx-rotate-180'></i> Import </button>
+        <button id="btn-export" type="button"> <i class='bx bx-link-external'></i> Export </button>
+        <button id="btn-category" type="button"> Category <i id="user-arrow" class='bx bx-chevron-down'></i> </button>
+      </div>
+    </div>
+    <div class="container-content">
+      <ul id="menu-l">
+        <li> <i class='bx bx-home'></i> </li>
+        <li id="selected"> <i class='bx bx-buildings'></i> </li>
+        <li> <i class='bx bx-time-five'></i> </li>
+        <li> <i class='bx bx-envelope'></i> </li>
+        <li> <i class='bx bx-book-alt'></i> </li>
+        <li> <i class='bx bx-calendar'></i> </li>
+        <li> <i class='bx bx-message-rounded'></i> <span id="number-msg"> 3 </span> </li>
+        <li> <i class='bx bx-cog'></i> </li>
+        <li> <i class='bx bx-user'></i> </li>
+      </ul>
+      <div id="files">
+        <h3> File Manager </h3>
+        <div class="actions">
+          <ul class="menu-file">
+            <li id="selected-file"> <i class='bx bx-home-alt'></i>
+              <p> Home </p>
+            </li>
+            <li> <i class='bx bx-file-blank'></i>
+              <p> Files </p>
+            </li>
+            <li> <i class='bx bx-star'></i>
+              <p> Starred </p>
+            </li>
+            <li> <i class='bx bx-share-alt'></i>
+              <p> Shared </p>
+            </li>
+            <li> <i class='bx bx-folder'></i>
+              <p> Recent </p> <span id="alert-recent"> 12 </span>
+            </li>
+            <li> <i class='bx bx-trash'></i>
+              <p> Recovery </p>
+            </li>
+            <li> <i class='bx bx-cog'></i>
+              <p> Settings </p>
+            </li>
+            <li> <i class='bx bx-paperclip'></i>
+              <p> Zip Files </p>
+            </li>
+          </ul>
+
+          <div class="btn">
+            <button id="btn-upload" type="button"> Upload </button>
+            <button id="btn-create" type="button"> Create </button>
+          </div>
+
+          <div class="storage">
+            <p> ---------------------------------- </p>
+            <img src="undraw_filing_system_re_56h6.svg" alt="">
+            <div class="btn-storage">
+              <button type="button"> <i class='bx bx-hdd'></i> Storage </button>
+              <span> <u> Upgrade </u> </span>
+            </div>
+            <div class="usado">
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+              <span id="gb-used"> 08.25 GB of 20 GB used </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="act-files">
+        <span id="new-folder"> <u> Create New Folder </u> </span>
+        <div class="icones-actions">
+          <div class="images">
+            <div id="fundo-images">
+              <i class='bx bx-images'></i>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span id="images-icon"> Images </span>
+          </div>
+          <div class="documents">
+            <div class="fundo-documents">
+              <i class='bx bx-book-alt'></i>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span id="documents-icon"> Documents </span>
+          </div>
+          <div class="videos">
+            <div class="fundo-videos">
+              <i class='bx bx-video'></i>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span id="videos-icon"> Videos </span>
+          </div>
+          <div class="pdf-files">
+            <div class="fundo-pdf">
+              <i class='bx bx-file-blank'></i>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+          <div class="audio">
+            <div class="fundo-audio">
+              <i class='bx bx-volume-full'></i>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-folders">
+          <h3> Recent Folder </h3>
+          <div class="all-files">
+            <span> All files </span> <i class='bx bx-chevron-down'></i>
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+          <div class="project">
+            <div class="title">
+              <i class='bx bx-folder'></i>
+              <span> Project Details </span>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span> 250MB - 5 members <u id="color-team">- Team Plan </u> </span>
+          </div>
+
+          <div class="client">
+            <div class="title">
+              <i class='bx bx-folder'></i>
+              <span> Client Meeting </span>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span> 100MB - 2 members <u id="color-team">- Team Plan </u> </span>
+          </div>
+
+          <div class="payment">
+            <div class="title">
+              <i class='bx bx-folder'></i>
+              <span> Payment </span>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span> 188MB - 6 members <u id="color-team">- Team Plan </u> </span>
+          </div>
+        </div>
+
+        <div class="files">
+          <h3> Files </h3>
+          <div class="all-files">
+            <span> All files </span> <i class='bx bx-chevron-down'></i>
+            <i class='bx bx-dots-horizontal-rounded'></i>
+          </div>
+          <div class="files-">
+            <div class="title">
+              <i class='bx bxs-file-txt'></i>
+              <span> Project Quotation.xlsx </span>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span> 20 Aug - 5 members - 2MB </span>
+          </div>
+
+          <div class="client">
+            <div class="title">
+              <i class='bx bxs-folder'></i>
+              <span> Project-details.Zip </span>
+              <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span> 20 Aug - 3 members - 3MB </span>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th> <i class='bx bx-square-rounded'></i> </th>
+              <th>NAME</th>
+              <th>CREATED BY</th>
+              <th>SIZE</th>
+              <th>CREATED</th>
+              <th>LAST MODIFIED</th>
+              <th>ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> <i class='bx bx-square-rounded'></i> </td>
+              <td>Meeting.Mp4</td>
+              <td> Jennifer <span> Client </span> </td>
+              <td>35MB</td>
+              <td>20-08-2022</td>
+              <td>20-08-2022</td>
+              <td><i class='bx bx-link'></i> <i class='bx bx-dots-vertical-rounded'></i> </td>
+            </tr>
+            <tr>
+              <td> <i class='bx bx-square-rounded'></i> </td>
+              <td>MobileAplication.APK</td>
+              <td> Jack <span> Manager </span> </td>
+              <td>16MB</td>
+              <td>15-08-2022</td>
+              <td>29-08-2022</td>
+              <td><i class='bx bx-link'></i> <i class='bx bx-dots-vertical-rounded'></i> </td>
+            </tr>
+            <tr>
+              <td> <i class='bx bx-square-rounded'></i> </td>
+              <td>Dashboard.HTML</td>
+              <td> Christopher JD <span> Client </span> </td>
+              <td>256KB</td>
+              <td>11-06-2022</td>
+              <td>20-08-2022</td>
+              <td><i class='bx bx-link'></i> <i class='bx bx-dots-vertical-rounded'></i> </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
