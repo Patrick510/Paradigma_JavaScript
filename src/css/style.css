@@ -16,6 +16,11 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  transition: 0.5s;
+}
+
+body.active {
+  background-color: #000;
 }
 
 header {
@@ -31,4 +36,66 @@ header {
 
 .links {
   list-style: none;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  width: 82px;
+  height: 30px;
+  border: 3px solid #000;
+  border-radius: 60px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn.active {
+  border-color: #fff;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #000;
+  border-radius: 50%;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.5s;
+}
+
+.btn.active::before {
+  left: 53px;
+  top: 14.5px;
+  background-color: #fff;
+}
+
+.bx-moon {
+  position: relative;
+  left: 6px;
+  top: -3px;
+  font-size: 20px;
+  color: var(--bg-color);
+}
+
+.bx-moon::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: left 0.5s;
+}
+
+.bx-moon.bx-sun::before {
+  left: 51px;
+  top: -0.3px;
+  transition: left 0.5s;
+  color: #000;
 }

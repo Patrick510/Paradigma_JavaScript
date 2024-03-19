@@ -80,7 +80,7 @@
             <li> <i class='bx bx-share-alt'></i>
               <p> Shared </p>
             </li>
-            <li> <i class='bx bx-folder'></i>
+            <li> <i id="folders-title" class='bx bx-folder'></i>
               <p> Recent </p> <span id="alert-recent"> 12 </span>
             </li>
             <li> <i class='bx bx-trash'></i>
@@ -120,102 +120,130 @@
         <div class="icones-actions">
           <div class="images">
             <div id="fundo-images">
-              <i class='bx bx-images'></i>
+              <i id="icones" class='bx bx-images'></i>
               <i class='bx bx-dots-vertical-rounded'></i>
             </div>
             <span id="images-icon"> Images </span>
           </div>
           <div class="documents">
             <div class="fundo-documents">
-              <i class='bx bx-book-alt'></i>
+              <i id="icones" class='bx bx-book-alt'></i>
               <i class='bx bx-dots-vertical-rounded'></i>
             </div>
             <span id="documents-icon"> Documents </span>
           </div>
           <div class="videos">
             <div class="fundo-videos">
-              <i class='bx bx-video'></i>
+              <i id="icones" class='bx bx-video'></i>
               <i class='bx bx-dots-vertical-rounded'></i>
             </div>
             <span id="videos-icon"> Videos </span>
           </div>
           <div class="pdf-files">
             <div class="fundo-pdf">
-              <i class='bx bx-file-blank'></i>
+              <i id="icones" class='bx bx-file-blank'></i>
               <i class='bx bx-dots-vertical-rounded'></i>
             </div>
+            <span id="pdf-icon"> PDF Files </span>
           </div>
           <div class="audio">
             <div class="fundo-audio">
-              <i class='bx bx-volume-full'></i>
+              <i id="icones" class='bx bx-volume-full'></i>
               <i class='bx bx-dots-vertical-rounded'></i>
+            </div>
+            <span id="audio-icon"> Audio </span>
+          </div>
+        </div>
+
+        <div class="recent-folders">
+          <div class="all-files">
+            <h3> Recent Folder </h3>
+            <div>
+              <span> All files </span> <i class='bx bx-chevron-down'></i>
+              <i class='bx bx-dots-horizontal-rounded'></i>
+            </div>
+          </div>
+          <div id="divs-recent" class="project">
+            <div class="title">
+              <div>
+                <i id="folders-title" class='bx bx-folder'></i>
+                <span> Project Details </span>
+                <i class='bx bx-dots-vertical-rounded'></i>
+              </div>
+              <span id="size"> 250MB - 5 members <u id="color-team">- Team Plan </u> </span>
+            </div>
+          </div>
+
+          <div id="divs-recent" class="client">
+            <div class="title">
+              <div>
+                <i id="folders-title" class='bx bx-folder'></i>
+                <span> Client Meeting </span>
+                <i class='bx bx-dots-vertical-rounded'></i>
+              </div>
+              <span id="size"> 100MB - 2 members <u id="color-team">- Team Plan </u> </span>
+            </div>
+          </div>
+
+          <div id="divs-recent" class="payment">
+            <div class="title">
+              <div>
+                <i id="folders-title" class='bx bx-folder'></i>
+                <span> Payment </span>
+                <i class='bx bx-dots-vertical-rounded'></i>
+              </div>
+              <span id="size"> 188MB - 6 members <u id="color-team">- Team Plan </u> </span>
             </div>
           </div>
         </div>
 
         <div class="recent-folders">
-          <h3> Recent Folder </h3>
           <div class="all-files">
-            <span> All files </span> <i class='bx bx-chevron-down'></i>
-            <i class='bx bx-dots-horizontal-rounded'></i>
-          </div>
-          <div class="project">
-            <div class="title">
-              <i class='bx bx-folder'></i>
-              <span> Project Details </span>
-              <i class='bx bx-dots-vertical-rounded'></i>
+            <h3> Files </h3>
+            <div>
+              <span> All files </span> <i class='bx bx-chevron-down'></i>
+              <i class='bx bx-dots-horizontal-rounded'></i>
             </div>
-            <span> 250MB - 5 members <u id="color-team">- Team Plan </u> </span>
           </div>
 
-          <div class="client">
+          <div id="divs-recent" class="project">
             <div class="title">
-              <i class='bx bx-folder'></i>
-              <span> Client Meeting </span>
-              <i class='bx bx-dots-vertical-rounded'></i>
+              <div>
+                <i id="folders-title" class='bx bxs-file-doc'></i>
+                <span> Project Quotation.xlsx </span>
+                <i class='bx bx-dots-vertical-rounded'></i>
+              </div>
+              <span id="size"> 20 Aug - 5 members - 2MB </span>
             </div>
-            <span> 100MB - 2 members <u id="color-team">- Team Plan </u> </span>
           </div>
 
-          <div class="payment">
+          <div id="divs-recent" class="client">
             <div class="title">
-              <i class='bx bx-folder'></i>
-              <span> Payment </span>
-              <i class='bx bx-dots-vertical-rounded'></i>
+              <div>
+                <i id="folders-title" class='bx bxs-folder'></i>
+                <span> Project-details.Zip </span>
+                <i class='bx bx-dots-vertical-rounded'></i>
+              </div>
+              <span id="size"> 20 Aug - 3 members - 3MB </span>
             </div>
-            <span> 188MB - 6 members <u id="color-team">- Team Plan </u> </span>
-          </div>
-        </div>
-
-        <div class="files">
-          <h3> Files </h3>
-          <div class="all-files">
-            <span> All files </span> <i class='bx bx-chevron-down'></i>
-            <i class='bx bx-dots-horizontal-rounded'></i>
-          </div>
-          <div class="files-">
-            <div class="title">
-              <i class='bx bxs-file-txt'></i>
-              <span> Project Quotation.xlsx </span>
-              <i class='bx bx-dots-vertical-rounded'></i>
-            </div>
-            <span> 20 Aug - 5 members - 2MB </span>
           </div>
 
-          <div class="client">
+          <div id="divs-recent" class="payment">
             <div class="title">
-              <i class='bx bxs-folder'></i>
-              <span> Project-details.Zip </span>
-              <i class='bx bx-dots-vertical-rounded'></i>
+              <div>
+                <i id="folders-title" class='bx bxs-bar-chart-square'></i>
+                <span> Banners.ai </span>
+                <i class='bx bx-dots-vertical-rounded'></i>
+              </div>
+              <span id="size"> 20 Aug - 4 members - 25MB </span>
             </div>
-            <span> 20 Aug - 3 members - 3MB </span>
           </div>
         </div>
 
         <table>
           <thead>
             <tr>
-              <th> <i class='bx bx-square-rounded'></i> </th>
+              <th> <i id="quadrado" class='bx bxs-square-rounded'></i> </th>
               <th>NAME</th>
               <th>CREATED BY</th>
               <th>SIZE</th>
@@ -226,31 +254,31 @@
           </thead>
           <tbody>
             <tr>
-              <td> <i class='bx bx-square-rounded'></i> </td>
+              <td> <i id="quadrado" class='bx bxs-square-rounded'></i> </td>
               <td>Meeting.Mp4</td>
               <td> Jennifer <span> Client </span> </td>
               <td>35MB</td>
               <td>20-08-2022</td>
               <td>20-08-2022</td>
-              <td><i class='bx bx-link'></i> <i class='bx bx-dots-vertical-rounded'></i> </td>
+              <td><i id="link" class='bx bx-link'></i> <i id="link2" class='bx bx-dots-vertical-rounded'></i> </td>
             </tr>
             <tr>
-              <td> <i class='bx bx-square-rounded'></i> </td>
+              <td> <i id="quadrado" class='bx bxs-square-rounded'></i> </td>
               <td>MobileAplication.APK</td>
               <td> Jack <span> Manager </span> </td>
               <td>16MB</td>
               <td>15-08-2022</td>
               <td>29-08-2022</td>
-              <td><i class='bx bx-link'></i> <i class='bx bx-dots-vertical-rounded'></i> </td>
+              <td><i id="link" class='bx bx-link'></i> <i id="link2" class='bx bx-dots-vertical-rounded'></i> </td>
             </tr>
             <tr>
-              <td> <i class='bx bx-square-rounded'></i> </td>
+              <td> <i id="quadrado" class='bx bxs-square-rounded'></i> </td>
               <td>Dashboard.HTML</td>
               <td> Christopher JD <span> Client </span> </td>
               <td>256KB</td>
               <td>11-06-2022</td>
               <td>20-08-2022</td>
-              <td><i class='bx bx-link'></i> <i class='bx bx-dots-vertical-rounded'></i> </td>
+              <td><i id="link" class='bx bx-link'></i> <i id="link2" class='bx bx-dots-vertical-rounded'></i> </td>
             </tr>
           </tbody>
         </table>
