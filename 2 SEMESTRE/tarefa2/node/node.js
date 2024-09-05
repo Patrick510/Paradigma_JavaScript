@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const port = 3100;
 const data = [
@@ -14,11 +15,17 @@ const data = [
   { id: 10, nome: "Iphone 24", preco: 2400.0, descricao: "Iphone 24 128GB" },
 ];
 
-app.get("/produtos", (req, res) => {
-  const { preco } = req.query;
+app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
-  const filteredData = data.filter((item) => item.preco > parseFloat(preco));
-  res.json(filteredData);
+app.get("/produtos", (req, res) => {
+  res.json(data);
 });
 
 app.get("/produtos/:id", (req, res) => {
