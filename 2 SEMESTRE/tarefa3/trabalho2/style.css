@@ -1,0 +1,47 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.container-fluid,
+.row {
+  height: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+}
+
+.nav-link {
+  color: #495057;
+  text-align: left;
+  width: 100%;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+}
+
+.nav-link.active {
+  color: #0d6efd;
+  background-color: #e9ecef;
+}
+
+.main-content {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.item {
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.item:hover {
+  background-color: #f1f1f1;
+  color: #0d6efd;
+}
